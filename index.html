@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi propio SlideShow con touch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>    
+    <div class="slider">       
+      <div class="slider_bloqueo slider_bloqueo_hide" id = "slider_bloqueo">
+
+      </div>
+        <div class="slide "  id = "slide02">
+          <img src="./imgs/imagen03.jpg" class="slide_imagen" alt="" />
+          <div class="slide_contenido">
+              <h2 class="slide_contenido_titulo">Titulo 3</h2>
+              <p class="slide_contenido_parrafo">Parrafo 3</p>
+              <a href="#" class="slide_contenido_enlace">Enlace 3</a>
+          </div>
+        </div> 
+        <div class="slide "  id = "slide04">
+          <img src="./imgs/imagen01.jpg" class="slide_imagen" alt="" />
+          <div class="slide_contenido">
+              <h2 class="slide_contenido_titulo">Titulo 5</h2>
+              <p class="slide_contenido_parrafo">Parrafo 5</p>
+              <a href="#" class="slide_contenido_enlace">Enlace 5</a>
+          </div>                      
+        </div> 
+        
+        <div class="slide "  id = "slide03">
+          <img src="./imgs/imagen04.jpg" class="slide_imagen" alt="" />
+          <div class="slide_contenido">
+              <h2 class="slide_contenido_titulo">Titulo 4</h2>
+              <p class="slide_contenido_parrafo">Parrafo 4</p>
+              <a href="#" class="slide_contenido_enlace">Enlace 4</a>
+          </div>                      
+        </div>  
+        <div class="slide "  id = "slide01">
+          <img src="./imgs/imagen02.jpg" class="slide_imagen" alt="" />
+          <div class="slide_contenido">
+              <h2 class="slide_contenido_titulo">Titulo 2</h2>
+              <p class="slide_contenido_parrafo">Parrafo 2</p>
+              <a href="#" class="slide_contenido_enlace">Enlace 2</a>
+          </div>
+        </div>
+        <div class="slide " id = "slide00">
+          <img src="./imgs/imagen01.jpg" class="slide_imagen" alt="" />
+          <div class="slide_contenido">
+              <h2 class="slide_contenido_titulo">Titulo 1</h2>
+              <p class="slide_contenido_parrafo">Parrafo 1</p>
+              <a href="#" class="slide_contenido_enlace">Enlace 1</a>
+          </div>
+        </div>
+              
+        
+        <a href="#" class="slide_prev"  >
+          <i class="fas fa-caret-left" id="slide_prev"></i>
+        </a>
+        <a href="#" class="slide_next"  >
+          <i class="fas fa-caret-right" id="slide_next"></i>
+        </a>
+        <div class="dots" id="dots_container">          
+          <!--
+          <i class="fa fa-circle" id = "slide_dot00"></i>
+          <i class="fa fa-circle" id = "slide_dot01"></i>
+          <i class="fa fa-circle" id = "slide_dot02"></i>
+          <i class="fa fa-circle" id = "slide_dot03"></i>
+          -->
+      </div>
+      </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

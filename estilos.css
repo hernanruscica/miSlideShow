@@ -1,0 +1,114 @@
+
+/****************************************************
+Estilos generales
+******************************************************/
+
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+:root {    
+    --letra-clara: #ddd;
+    --slide-altura: 360px;
+    --slide-flechas-tamanio: calc(3 * 16px);/*3em*/  
+    --slider-width-factor: 1.31;  
+}
+
+/****************************************************
+Estilos del slider 
+******************************************************/
+
+.slider{
+    width: calc(var(--slide-altura) * var(--slider-width-factor));
+    min-width: var(--slide-altura);
+    height: var(--slide-altura);
+    position: relative;  
+    height: var(--slide-altura);
+    border: green solid 4px; 
+    display: flex;
+    overflow: hidden;
+}
+
+.slider_bloqueo{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 20;    
+}
+
+.slider_bloqueo_hide{
+    display: none;
+    cursor: none;
+}
+
+.slide{
+    height: 100%;    
+    position: absolute;    
+    left: 0px;      
+    transition: all 0.4s ease-in; 
+}
+
+.slide_imagen{    
+    width: auto;
+    height: 100%;    
+}
+
+.slide_contenido{
+    position: absolute;
+    top: 0px;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.slide_ocultar{
+    display: none;
+}
+.slide_prev,
+.slide_next{
+    position: absolute;
+    top: calc(var(--slide-altura)  / 2 - calc(var(--slide-flechas-tamanio) / 2)) ;        
+    font-size: var(--slide-flechas-tamanio);
+    color: var(--letra-clara);
+    z-index: 1;
+}
+.slide_prev{
+    left: 0.5em;
+}
+.slide_next{
+    right: 0.5em;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;            
+    left: calc(50% - 60px);
+    width: 200px;
+    z-index: 18px;    
+    color: #fff;     
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+.moverIzquierda {
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in;
+}
+.moverCentro {
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+}
+
+.moverDerecha {
+    transform: translateX(100%);
+    transition: all 0.4s ease-in;
+}
